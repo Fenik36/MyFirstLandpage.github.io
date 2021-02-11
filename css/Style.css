@@ -1,0 +1,192 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfde;
+  margin: 20px;
+}
+
+/************************* Profile*********************/
+.Profile {
+  background-color: #090807;
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 3rem;
+  padding-left: 0px;
+  min-width: 340px;
+}
+
+.Profile .ProfileImg img {
+  padding: 50px 0px;
+}
+
+.Profile .ProfileText {
+  margin: auto;
+  padding-left: 40px;
+}
+
+.Profile .ProfileText h1 {
+  color: white;
+  font-size: clamp(24px, 4.7vw, 64px);
+}
+
+.Profile .ProfileText p {
+  color: white;
+  font-size: clamp(8px, 1.6vw, 22px);
+  max-width: 80%;
+}
+
+/************************* Client Roster *********************/
+.ClientRoster {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(70%, #ffffff),
+    color-stop(30%, #090807)
+  );
+  background: linear-gradient(#ffffff 70%, #090807 30%);
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 3rem;
+  min-width: 340px;
+}
+
+.ClientRoster .RousterText {
+  margin-bottom: 80px;
+}
+
+.ClientRoster .RousterText h1 {
+  padding-left: 18px;
+  font-size: clamp(26px, 4.7vw, 4rem);
+  font-weight: 500;
+}
+
+.ClientRoster .RousterText p {
+  font-size: clamp(10px, 1.7vw, 1.3rem);
+  font-weight: 500;
+}
+
+.ClientRoster .RousterImgs .card {
+  margin: 20px auto;
+  border-radius: 0px;
+}
+
+.ClientRoster .RousterImgs p {
+  font-size: Min(1.4vw, 1.3rem);
+  font-weight: 700;
+}
+
+/******************* Our Services ******************************/
+.OurServices {
+  background-color: #090807;
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 3rem;
+  min-width: 340px;
+}
+
+.OurServices h1 {
+  color: white;
+  font-size: clamp(28px, 4.7vw, 4rem);
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.ServicesList {
+  margin: auto 0px;
+}
+
+.ServicesList ol {
+  list-style: none;
+  counter-reset: Items;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.ServicesList ol li {
+  counter-increment: Items;
+  font-size: clamp(10px, 1.3vw, 1.1rem);
+  margin: 0px auto 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border-style: Solid none none none;
+  border-color: #868585;
+  border-width: thin;
+  width: 85%;
+  padding: 18px;
+}
+
+.ServicesList ol li::before {
+  content: "0" counter(Items);
+  font-weight: bold;
+  font-size: clamp(20px, 3.7vw, 3.2rem);
+  margin-right: 16px;
+  color: #868585;
+}
+
+.ServicesList ol li h2 {
+  font-size: clamp(16px, 2.3vw, 2rem);
+}
+
+/******************** Let's Work Together *******************/
+.WorkTogether {
+  background-color: #090807;
+  max-width: 1350px;
+  margin: 20px auto;
+  padding: 3rem;
+  padding-bottom: 0px;
+  min-width: 340px;
+}
+
+.WorkTogether h1 {
+  color: white;
+  font-size: clamp(24px, 4.7vw, 4rem);
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.WorkTogether .WorkTogetherInfo {
+  margin: auto;
+}
+
+.WorkTogether .WorkTogetherInfo h2 {
+  color: #868585;
+  font-size: clamp(12px, 1.8vw, 25px);
+  font-weight: 500;
+}
+
+.WorkTogether .WorkTogetherInfo h3 {
+  color: white;
+  font-size: clamp(9px, 1.6vw, 1.4rem);
+  font-weight: 400;
+  margin-bottom: clamp(25px, 2.9vw, 40px);
+}
+
+/****************** media Query ******************************/
+@media screen and (max-width: 768px) {
+  .Profile .ProfileText {
+    text-align: center;
+  }
+  .Profile .ProfileText p {
+    max-width: 100%;
+  }
+  .ClientRoster .RousterImgs p {
+    font-size: Max(3vw, 16px);
+  }
+  .WorkTogether .WorkTogetherInfo,
+  .ServicesList {
+    margin-top: 40px;
+  }
+  .ClientRoster .RousterText {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
